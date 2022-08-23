@@ -18,6 +18,6 @@ flutter手势事件传递到原生
   s.platform = :ios, '8.0'
 
   # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386','BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   s.swift_version = '5.0'
 end
